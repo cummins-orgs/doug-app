@@ -1,6 +1,5 @@
 import os
 import streamlit as st
-import openai
 import base64
 import json
 from pydantic import BaseModel, ValidationError, Field
@@ -21,7 +20,6 @@ st.set_page_config(page_title="Used Book Lister", layout="centered")
 #client = instructor.patch(OpenAI())
 
 # Initialize OpenAI API key from secrets
-#testy = st.secrets.get("OPENAI_API_KEY")
 testy = os.environ["OPENAI_API_KEY"]
 
 
